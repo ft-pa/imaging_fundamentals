@@ -116,7 +116,7 @@ def toeplitz_from_vector(input_row_vec:Union[list,
 
 			col_vec = row_vec
 		elif isinstance(input_col_vec, (list, tuple)):
-			cv_type = type(col_vec[0])
+			cv_type = type(input_col_vec[0])
 
 			col_vec = np.array(input_col_vec,
 							ndmin=1,
